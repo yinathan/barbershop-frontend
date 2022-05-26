@@ -5,8 +5,11 @@ import Show from '../pages/Show'
 
 export default function Main(props) {
     return(
-        <div>
-            <h1>Main</h1>
-        </div>
+        <main>
+            <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/barbers/:id" element={<Main />} />
+            </Routes>
+        </main>
     )
 }
