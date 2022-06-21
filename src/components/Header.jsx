@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
-
-export default function Header(props) {
-    return(
-        <nav>
-            <Link to="/">
-                <div>BarberShop App</div>
-            </Link>
-        </nav>
-    )
+function Header (props) {
+  return (
+    <nav className='nav'>
+      <Link to='/'>
+        <div>People App</div>
+      </Link>
+    </nav>
+  )
 }
+
+export default Header
